@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="6724" systemVersion="13F34" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6711"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3735"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="WatchKitBsp_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <label width="1" height="100" alignment="center" verticalAlignment="center" text="--- Zitat ---" textAlignment="center" numberOfLines="5" id="xWg-rJ-XBk">
+                            <color key="textColor" red="1" green="0.22198087859999999" blue="0.20845820409999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                        </label>
+                        <button width="1" alignment="left" title="Next" id="eOg-ip-OlX">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="btnPressed" destination="AgC-eL-Hgc" id="htc-M5-ChP"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="uiLabel" destination="xWg-rJ-XBk" id="074-pl-fi8"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="140" y="137"/>
+        </scene>
+    </scenes>
+</document>
